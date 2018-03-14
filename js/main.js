@@ -46,5 +46,42 @@ function displayMovies(movies) {
   document.body.innerHTML = htmlBlock;
 }
 
+/* NYTT IGEN*/
+function movieText() {
+    var item = document.getElementById("MovieInput").value /* variabeln *item* innehåller dokument elementet med id *MovieInput* som hämtas från index filen, skapar en ruta där man kan skriva inuti  */
+    var text = document.createTextNode(item) /* variabeln *text*, skapar textnod som vidareförmedlar data , den hämtar variabeln *item* , är till för att användaren ska kunna skriva in valfri text i *todoInput* fältet */
+    var movieList = document.getElementById("movieList"); /* variabeln *todoList* innehåller dokument elementet med id *todoList*, ul som hämtas från index filen, för att kunna lägga till element på ul*/
+    var newItem = document.createElement("li") /* variabeln *newItem* innehåller dokument elementet li , skapar li element som kan läggas till som hämtas från index filen */
+
+    newItem.appendChild(text) /* hämtar variabeln *newItem*, lägger till text i *todoInput* fältet med hjälp av variablen *text* vi skapa tidigare, när man väl har skrivit in något i *todoInput* så kommer den texten att skrivas ut*/
+
+    document.getElementById("movieList").appendChild(newItem) /* hämtar elementet med id *todolist* från indexen , appendchild lägger till ett nytt "barn" , vi använder oss av variabeln *newItem* för att kunna gå in i ul elementet så att texten vi skriver kommer hamna som en lista  */
+    console.log(movieList)  
+    
+    
+}
+
+/* NYTT IGEN slut*/
+    
+    
+   
+    
+    
+    /* istället för att säga om den i indexen gör man det här */
+
+   
+    var searchMovieButton = document.getElementById('searchMovie');
+    
+    searchMovieButton.onclick = function(){
+    searchMovieButton();
+        
+    
+    }   
+ 
+
+    
+    /* gör man det här slut */
+
+
 /*  använda sedan kanske men göra om dom en del
  - ${movie.rating} - <span id='genColor' style='background-color:red;'>${movie.genres} </span> - ${likeMovie}</p> */
