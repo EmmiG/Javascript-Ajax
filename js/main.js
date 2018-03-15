@@ -13,10 +13,15 @@ function fetchMovies(){
     });
 }
 
-
+let div = document.getElementById('movieBox'); 
+let ul = document.getElementById('movieList'); 
 
 
 function displayMovies(movies) {
+    
+   
+    
+     
   
   let htmlBlock = ''; /* en variabel som indekerar på en tom sträng och en användare kan skriva in valfri text*/
  for (const movie of movies.results) {
@@ -42,8 +47,8 @@ function displayMovies(movies) {
       `;
           
   }
-
-  document.body.innerHTML = htmlBlock;
+   
+  document.div.innerHTML = htmlBlock;
 }
 
 /* NYTT IGEN*/
