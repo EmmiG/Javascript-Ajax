@@ -48,7 +48,7 @@ function displayMovies(movies) {
           
   }
    
-  document.div.innerHTML = htmlBlock;
+  ul.innerHTML = htmlBlock; /* Jag använder mig av variabeln ul som jag skapade på rad 17 för att hämta dokumentet movieList som jag har i min index.html fil, resultatet blir att de skrivs ut alla filmer från servern då jag hade en console.log(movieList); i min main.js fil förut. */
 }
 
 /* NYTT IGEN*/
