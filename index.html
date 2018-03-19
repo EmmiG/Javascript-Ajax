@@ -10,7 +10,7 @@
 
 
 
-    <!-- Latest compiled and minified CSS -->
+    <!-- La bootsstrap länken först för att style css ska kunna funka, både bootstrap och style css är css länkar så det måste finnas i koden på ett speciell plats -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
     
        <link rel="stylesheet" href="css/style.css">
@@ -31,28 +31,28 @@
 
      <div class="movieBox">
      
-     <!-- NYTT-->
+    
      
      
               <form id="addMovieForm">
                     <!-- gav formuläret ett unikt id -->
                     <div id="inputWrapper">
                         <!--  omslag för input fältet, unikt id skapades -->
-                        <input id="MovieInput">
-                        <!--  unikt id för inputfältet, här skriver användren in ord/ rad som dom vill komma ihåg-->
+                        <input id="movieInput">
+                        <!--  unikt id för inputfältet,skapar en ruta där man kan skriva inuti-->
 
                         <button id="searchMovie" type="button"> Search for a movie</button>
-                        <!-- Här ser man till så att det som man har skrivit i *todoinput* skickas till id *todoList* som finns under titeln *in progress* -->
+                        <!-- Här ser man till så att det som man har skrivit i *movieInput* skickas till ul id *movieList*  -->
                     </div>
                     <!-- *inputWrapper* klassen slutar -->
 
                 </form>
                 <!-- form slutar -->
                 
-                <!-- NYTT slut -->
+           
        
          <ul id="movieList">
-                    <!-- skapade ett unikt id på ulen,  under här kommer användaren att skriva in vilken text dom önskar att komma ihåg -->
+                    <!-- skapade ett unikt id på ulen,  under här kommer användaren att skriva in vilken film som användaren vill söka efter -->
 
             
                 </ul>
@@ -64,18 +64,18 @@
         
         
       </div> 
+        <!--  *movieBox* klassen slutar -->
         
-        <div id="list">
-         <!--  *movieBox* klassen slutar -->
+      
          
          </div>
+          <!--  *movieWrapper* klassen slutar -->
          
          </div>
-         
-         </div>
+          <!--  *wrapper* klassen slutar -->
          
          
     
-    <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>    <!--  script för att få javascript att fungera-->
 </body>
 </html>
