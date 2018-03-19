@@ -32,7 +32,7 @@ function displayMovies(movies) {
      let backDrop = ''; /* skapade en variabel vid namn *backDrop* */
      let url = `https://image.tmdb.org/t/p/w300/${movie.backdrop_path}`; /* länken fram till p = base_url w300 = size och använder backdrop_path är själva namnet på bilden i The Movie Db´s databas, så att jag kan hämta bilden från databasen istället för att jag hittar bilden på min egen dator */
      
-     console.log(movie.vote_average);
+     //console.log(movie.vote_average);
      //` ` talar om att allt ska ligga i en sträng med variabler och - kan bytas ut till vad som och räknas som en valfri text 
      /* Använde variabeln movie och kan nu skriva ut Orginal Titel, Fakta om respektive film, vilken plats filmen har , Rankning från 1 -10 ......... i console.log*/
       
@@ -51,10 +51,10 @@ function displayMovies(movies) {
   ul.innerHTML = htmlBlock; /* Jag använder mig av variabeln ul som jag skapade på rad 17 för att hämta dokumentet movieList som jag har i min index.html fil, resultatet blir att de skrivs ut alla filmer från servern då jag hade en console.log(movieList); i min main.js fil förut. */
 }
 
-/* NYTT IGEN*/
+
 function movieText() {
     var item = document.getElementById("MovieInput").value /* variabeln *item* innehåller dokument elementet med id *MovieInput* som hämtas från index filen, skapar en ruta där man kan skriva inuti  */
-    var text = document.createTextNode(item) /* variabeln *text*, skapar textnod som vidareförmedlar data , den hämtar variabeln *item* , är till för att användaren ska kunna skriva in valfri text i *todoInput* fältet */
+    var text = document.createTextNode(item) /* variabeln *text*, skapar textnod som vidareförmedlar data , den hämtar variabeln *item* , är till för att användaren ska kunna skriva in valfri text i ** fältet */
     var movieList = document.getElementById("movieList"); /* variabeln *todoList* innehåller dokument elementet med id *todoList*, ul som hämtas från index filen, för att kunna lägga till element på ul*/
     var newItem = document.createElement("li") /* variabeln *newItem* innehåller dokument elementet li , skapar li element som kan läggas till som hämtas från index filen */
 
@@ -66,7 +66,30 @@ function movieText() {
     
 }
 
-/* NYTT IGEN slut*/
+/* NYTT*/
+
+
+    var showMovie = document.getElementById('searchMovie'); /* variabeln *newItem* innehåller dokument elementet li , skapar li element som kan läggas till som hämtas från index filen */
+    
+   
+
+    showMovie.onclick = function () { /* använder mig av variabeln *newItem*, onclick betyder att när man klickar på det som man har skrivit in, så kommer det hända något och då använder man sig av en funktion som talar om vad som ska hända*/
+        
+         
+
+    
+        
+      movieText();
+        
+          
+
+
+    }
+
+
+
+
+/* NYTT SLUT */
     
     
    
@@ -75,13 +98,13 @@ function movieText() {
     /* istället för att säga om den i indexen gör man det här */
 
    
-    var searchMovieButton = document.getElementById('searchMovie');
+    //var searchMovieButton = document.getElementById('searchMovie');
     
-    searchMovieButton.onclick = function(){
-    searchMovieButton();
+    //searchMovieButton.onclick = function(){
+    //searchMovieButton();
         
     
-    }   
+    //}  // 
  
 
     
