@@ -1,8 +1,9 @@
-o	ditt namn
+o	Emmi Gillgren
 o	länk till projektet live på GitHub Pages samt länk till själva GitHub-repositoriet.
 o	kort beskrivning av applikationen, dess syfte och funktionalitet.
 o	punktlista med vilka teknologier du använt.
 o	kort beskrivning av det API/APIer du använt samt länk till dem.
+Jag har använt mig av APIet The Movie DB , här kan man söka efter: Filmer, Tv program samt personer.
 o	kortfattat om din arbetsprocess och vad som skulle kodmässigt kunna förbättras. Man kan t.ex. ha en "TODO"-sektion i ens README med saker som skulle kunna implementeras om tid fanns.
 
 •	Din kod ska även vara deployad live via GitHub Pages och man ska kunna besöka den färdiga sidan live. (Detta görs enklast genom att pusha upp en branch i ditt repo som heter gh-pages)
@@ -19,7 +20,7 @@ o	Du ska göra flera olika anrop till APIet och inte bara 1 simpel GET-request t
 •	Användaren kan på något sätt styra över vilken information som hämtas, d.v.s. någon form av urval finns som exempelvis ett sökfält V , kategorier eller liknande som man kan filtera innehållet via. Vid filtering ska ett nytt AJAX-anrop skickas till APIet/APIerna med sökning eller filtreringskriterierna, alternativ att den existerande datan filtreras ut. (tog den andra)
 •	Du genomför projektet självständigt och skriver all kod själv V samt att du förväntas kunna berätta om all din kod och visa att du behärskar det du skrivit. V
 •	Du uppvisar god förståelse för AJAX och asynkron kommunikation och hur man jobbar asynkront i JavaScript. TITTA______________
-•	Du error-hanterar dina anrop  V och all eventuell input från input-fält. TITTA_____________
+•	Du error-hanterar dina anrop  V och all eventuell input från input-fält.
 •	Du använder semantisk och tydligt strukturerad HTML5 och har en responsiv design. PÅVÄG___________
 •	Din html, css och js är:
 o	Fungerande V

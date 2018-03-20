@@ -9,7 +9,7 @@ function fetchMovies() {
             return response.json()
         })
         .then(function (movies) { /* Sedan gör vi en funktion som skickar med alla filmer */
-            globalMovieList = movies.results; /* skriver ut alla filmer på sidan i console */
+            globalMovieList = movies.results; /* skriver ut alla filmer på sidan */
             displayMovies(movies); /* är kopplad till funktionen displayMovies och skickar med att den ska visa alla filmerna på sidan */
         })
         .catch(function (error) { /* Man ska alltid ha en catch som tar emot alla error som eventuellt kan dyka upp */
@@ -67,12 +67,12 @@ movieInput.addEventListener('keyup', function () { /* använder sig av input i h
     /* Loopa igenom varje film, söker igenom alla filmer */
 
     for (let movie of globalMovieList) {
-        
+
         let backDrop = ''; /* skapade en variabel vid namn *backDrop*, denna behövs för att kunna få bilderna att funka på webbsidan */
         let url = `https://image.tmdb.org/t/p/w300/${movie.backdrop_path}`; /* länken fram till p = base_url, w300 = size och använder backdrop_path är själva namnet på bilden i The Movie Db´s databas, så att jag kan hämta bilden från databasen istället för att jag hittar bilden på min egen dator */
 
         /*  Om(if) den hittar orginal filmen av texten som användaren har skrivit in i inputfältet och den är över detta värde : läggs den till i htmlen som sedan kommer den att bifogas till Dom  och skriva ut dens värde */
-        console.log(movie) 
+        console.log(movie)
         if (movie.original_title.includes(movieInput.value)) {
             htmlBlock += `
          <p>${movie.original_title} - ${movie.overview} - ${movie.vote_count} - ${movie.vote_average}</p>
@@ -87,12 +87,8 @@ movieInput.addEventListener('keyup', function () { /* använder sig av input i h
 
     /* När vi har gått igenom alla filmer */
 
-    ul.innerHTML = htmlBlock; /* lägg till i HTMLen inuti diven  i htmlen */  /* OSÄKER titta på rad 77 och denna tror det är något fel här*/
+    ul.innerHTML = htmlBlock; /* lägg till i HTMLen inuti diven  i htmlen */ 
 })
-
-
-/* NYTT 20 mars 2018 inputfält knapp ta ut data SLUT */
-/* NYTT*/
 
 
 
@@ -116,27 +112,6 @@ showMovie.onclick = function () { /* använder mig av variabeln *showMovie*, onc
 
 
 
-
-/* NYTT SLUT */
-
-
-
-
-
-/* istället för att säga om den i indexen gör man det här */
-
-
-//var searchMovieButton = document.getElementById('searchMovie');
-
-//searchMovieButton.onclick = function(){
-//searchMovieButton();
-
-
-//}  // 
-
-
-
-/* gör man det här slut */
 
 
 /*  använda sedan kanske men göra om dom en del
