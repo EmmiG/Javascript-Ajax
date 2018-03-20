@@ -58,26 +58,6 @@ function displayMovies(movies) { /* visar upp all filmer som finns i API databas
 }
 
 
-/*function movieText() {
-    var item = document.getElementById("movieInput").value /* variabeln *item* innehåller dokument elementet med id *movieInput* som hämtas från index filen, skapar en ruta där man kan skriva inuti  */
-    //var text = document.createTextNode(item) /* variabeln *text*, skapar textnod som vidareförmedlar data , den hämtar variabeln *item* , är till för att användaren ska kunna skriva in valfri text i *movieInput* fältet */
-    //var movieList = document.getElementById("movieList"); /* variabeln *movieList* innehåller dokument elementet med id *movieList*, ul som hämtas från index filen, för att kunna skriva in vilken film du vill söka efter */
-    //var newItem = document.createElement("li") /* variabeln *newItem* innehåller dokument elementet li , skapar li element som kan läggas till som hämtas från index filen */
-
-    //newItem.appendChild(text) /* hämtar variabeln *newItem*, lägger till text i *movieInput* fältet med hjälp av variablen *text* vi skapa tidigare, när man väl har skrivit in något i *movieInput* så kommer den texten att skrivas ut */
-
-    //document.getElementById("movieList") /* hämtar elementet med id *movielist* från indexen */
-    //console.log(movieList)
-
-
-/*}*/
-
-
-
-
-/* NYTT 20 mars 2018 inputfält knapp ta ut data */
-
-
 
 
 /* en listener som kommer att aktiveras när användaren skriver in en titel i *movieInput* fältet*/
@@ -87,11 +67,21 @@ movieInput.addEventListener('keyup', function () { /* använder sig av input i h
     /* Loopa igenom varje film, söker igenom alla filmer */
 
     for (let movie of globalMovieList) {
+        
+        let backDrop = ''; /* skapade en variabel vid namn *backDrop*, denna behövs för att kunna få bilderna att funka på webbsidan */
+        let url = `https://image.tmdb.org/t/p/w300/${movie.backdrop_path}`; /* länken fram till p = base_url, w300 = size och använder backdrop_path är själva namnet på bilden i The Movie Db´s databas, så att jag kan hämta bilden från databasen istället för att jag hittar bilden på min egen dator */
 
         /*  Om(if) den hittar orginal filmen av texten som användaren har skrivit in i inputfältet och den är över detta värde : läggs den till i htmlen som sedan kommer den att bifogas till Dom  och skriva ut dens värde */
-        console.log(movie)
+        console.log(movie) 
         if (movie.original_title.includes(movieInput.value)) {
-            htmlBlock += `<p>${movie.original_title}</p>`;
+            htmlBlock += `
+         <p>${movie.original_title} - ${movie.overview} - ${movie.vote_count} - ${movie.vote_average}</p>
+
+         <img src="${url}"></img> 
+             
+
+
+`;
         }
     }
 
