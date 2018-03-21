@@ -43,12 +43,12 @@ function displayMovies(movies) { /* visar upp all filmer som finns i API databas
         /* Använde variabeln movie och kan nu skriva ut Orginal Titel, Fakta om respektive film, vilken plats filmen har totalt , Rankning från 1 -10 ......... i console.log*/
         // använder mig av variabeln url för att kunna skriva ut själva bilden från databasen på webbsidan  
         htmlBlock += ` 
-      <p> ${movie.original_title} - ${movie.overview} - ${movie.vote_count} - ${movie.vote_average}</p>
 
-         <img src="${url}"></img> 
+        <img src="${url}"></img> 
 
+      <p> <span style='color:#21d1ae;'>${movie.original_title} </span> - ${movie.overview} - <span style='color:#5a6dff;'>${movie.vote_count} </span> - <span style='color:#49b5d6;'>${movie.vote_average} </span></p>
 
-
+         
    
       `;
 
@@ -75,9 +75,12 @@ movieInput.addEventListener('keyup', function () { /* använder sig av input i h
         console.log(movie)
         if (movie.original_title.includes(movieInput.value)) {
             htmlBlock += `
-         <p>${movie.original_title} - ${movie.overview} - ${movie.vote_count} - ${movie.vote_average}</p>
 
-         <img src="${url}"></img> 
+          <img src="${url}"></img> 
+
+    <p><span style='color:#21d1ae;'>${movie.original_title} </span> - ${movie.overview} - <span style='color:#5a6dff;'>${movie.vote_count} </span> - <span style='color:#07e2ff;'>${movie.vote_average} </span></p>
+
+         
              
 
 
