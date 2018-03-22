@@ -1,13 +1,42 @@
 
+
+#movieList{
+    //display: flex;
+    //flex-wrap: wrap;
+     -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 2;
+    text-align: center;
+    column-gap: 65px;
+    column-width: 200px;
+    margin-left: 15px;
+ 
+    
+}
 #movieList, p{
     
+    //text-align: center;
     font-size: 18px;
+    max-width: 700px;
     //max-width: 768px;
     //text-align: left;
-    //margin-top: 20px;
+   //margin-top: 80px;
     //margin-bottom: 40px;
     
     //width: 100%;
+    //flex-basis: 50%;
+    //float: left;
+   
+    
+    
+}
+
+#movieList, img{
+     //flex-basis: 50%;
+    //float: left;
+    
+    
+    
 }
 
 
@@ -24,19 +53,27 @@
 }
 
 #inputWrapper{
-    //text-align: center;
+    text-align: center;
    // margin-bottom: 40px;
+     max-width: 700px;
+    margin-bottom: 80px;
+    
+    
+  
+  
     
 }
 #movieInput{
-   width: 55%;
+   width: 40%;
     border: 2px solid black;
+    
     
     
 }
 
 #searchMovie{
     border-radius: 6px;
+       
     
    
 
