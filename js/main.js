@@ -46,7 +46,7 @@ function displayMovies(movies) { /* visar upp all filmer som finns i API databas
 
         <img src="${url}"></img> 
 
-      <p> <span style='color:#21d1ae;'>${movie.original_title} </span> - ${movie.overview} - <span style='color:#5a6dff;'>${movie.vote_count} </span> - <span style='color:#49b5d6;'>${movie.vote_average} </span></p>
+      <p> <span style='color:#21d1ae;'>${movie.original_title} </span> : <br /> ${movie.overview} <br /> <br /> Ranking of all movies: <span style='color:#5a6dff;'>${movie.vote_count} </span> <br /> Ranking this movie 1-10: <span style='color:#49b5d6;'>${movie.vote_average} </span></p>
 
          
    
