@@ -1,0 +1,109 @@
+#movieList{
+    
+     -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    //text-align: center;
+    //column-gap: 20px;
+    column-width: 100px;
+    //margin-left: 15px;
+     padding-right: 50px;
+    //margin-right: 50px;
+    
+ 
+    
+}
+#movieList, p{
+    
+    //text-align: center;
+    font-size: 22px;
+    //max-width: 700px;
+    //width: 100%;
+    //max-width: 768px;
+    //text-align: left;
+   //margin-top: 80px;
+    //margin-bottom: 40px;
+    
+    //width: 100%;
+    //flex-basis: 50%;
+    //float: left;
+   max-width: 1280px;
+    
+    
+}
+
+#movieList, img{
+     //flex-basis: 50%;
+    //float: left;
+    
+    
+    
+}
+
+
+.logo{
+    height: 120px;
+    max-width: 1280px;
+  
+   
+    //margin-bottom: 50px;
+}
+
+.logo, h1{
+    font-size: 50px;
+    line-height: 120px; 
+}
+
+#inputWrapper{
+    //text-align: center;
+   // margin-bottom: 40px;
+    max-width: 1280px;
+   // width: 100%;
+   // margin-bottom: 80px;
+       //padding-bottom: 60px;
+    
+     vertical-align: middle;
+    line-height: 50px;
+    
+ 
+ 
+    
+    
+  
+  
+    
+}
+#movieInput{
+   width: 45%;
+   // border: 2px solid black;
+    height: 50px;
+    padding-top: 10px;
+   
+  
+    
+    
+    
+}
+
+#searchMovie{
+    border-radius: 8px;
+    height: 50px;
+    width: 300px;
+    font-size: 22px;
+    text-align: center;
+    
+     
+    
+       
+    
+   
+
+}
+
+footer{
+    
+    height: 120px;
+    max-width: 1280px;
+   
+  
+} 
