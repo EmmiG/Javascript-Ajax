@@ -25,8 +25,6 @@ function displayMovies(movies) { /* visar upp all filmer som finns i API databas
 
 
 
-
-
     let htmlBlock = ''; /* en variabel som indekerar på en tom sträng och en användare kan skriva in valfri text */
     for (const movie of movies.results) { /* skapar en variabel som man inte kan ändra på , som finns hela tiden och loopar ut/skriver ut alla filmer som finns, results är den jag skulle gå in i enligt min API för att den är arrayen för att kunna hitta filmerna */
 
@@ -38,7 +36,7 @@ function displayMovies(movies) { /* visar upp all filmer som finns i API databas
         let backDrop = ''; /* skapade en variabel vid namn *backDrop*, denna behövs för att kunna få bilderna att funka på webbsidan */
         let url = `https://image.tmdb.org/t/p/w300/${movie.backdrop_path}`; /* länken fram till p = base_url, w300 = size och använder backdrop_path är själva namnet på bilden i The Movie Db´s databas, så att jag kan hämta bilden från databasen istället för att jag hittar bilden på min egen dator */
 
-        //console.log(movie.vote_average); /* om jag okommenterar denna så kommer den att skriva ut vilken rankning mellan 1-10 som filmen har i console*/
+    
         //` ` talar om att allt ska ligga i en sträng med variabler och - kan bytas ut till vad som och räknas som en valfri text 
         /* Använde variabeln movie och kan nu skriva ut Orginal Titel, Fakta om respektive film, vilken plats filmen har totalt , Rankning från 1 -10 ......... i console.log*/
         // använder mig av variabeln url för att kunna skriva ut själva bilden från databasen på webbsidan  
@@ -47,8 +45,7 @@ function displayMovies(movies) { /* visar upp all filmer som finns i API databas
         <img src="${url}"></img> 
 
       <p> <span style='color:#21d1ae;'>${movie.original_title} </span> : <br /> ${movie.overview} <br /> <br /> Ranking of all movies: <span style='color:#5a6dff;'>${movie.vote_count} </span> <br /> Ranking this movie 1-10: <span style='color:#49b5d6;'>${movie.vote_average} </span></p>
-
-         
+ 
    
       `;
 
@@ -56,7 +53,6 @@ function displayMovies(movies) { /* visar upp all filmer som finns i API databas
 
     ul.innerHTML = htmlBlock; /* Jag använder mig av variabeln ul som jag skapade på rad 17 för att hämta dokumentet *movieList* som jag har i min index.html fil, resultatet blir att de skrivs ut alla filmer från servern då jag hade en console.log(movieList); i min main.js fil förut. */
 }
-
 
 
 
@@ -72,7 +68,7 @@ movieInput.addEventListener('keyup', function () { /* använder sig av input i h
         let url = `https://image.tmdb.org/t/p/w300/${movie.backdrop_path}`; /* länken fram till p = base_url, w300 = size och använder backdrop_path är själva namnet på bilden i The Movie Db´s databas, så att jag kan hämta bilden från databasen istället för att jag hittar bilden på min egen dator */
 
         /*  Om(if) den hittar orginal filmen av texten som användaren har skrivit in i inputfältet och den är över detta värde : läggs den till i htmlen som sedan kommer den att bifogas till Dom  och skriva ut dens värde */
-        console.log(movie)
+        
         if (movie.original_title.includes(movieInput.value)) {
             htmlBlock += `
 
@@ -80,9 +76,7 @@ movieInput.addEventListener('keyup', function () { /* använder sig av input i h
 
     <p><span style='color:#21d1ae;'>${movie.original_title} </span> - ${movie.overview} - <span style='color:#5a6dff;'>${movie.vote_count} </span> - <span style='color:#07e2ff;'>${movie.vote_average} </span></p>
 
-         
-             
-
+  
 
 `;
         }
@@ -90,9 +84,8 @@ movieInput.addEventListener('keyup', function () { /* använder sig av input i h
 
     /* När vi har gått igenom alla filmer */
 
-    ul.innerHTML = htmlBlock; /* lägg till i HTMLen inuti diven  i htmlen */ 
+    ul.innerHTML = htmlBlock; /* lägg till i HTMLen inuti diven  i htmlen */
 })
-
 
 
 
@@ -103,19 +96,7 @@ var showMovie = document.getElementById('searchMovie'); /* variabeln *showMovie*
 showMovie.onclick = function () { /* använder mig av variabeln *showMovie*, onclick betyder att när man klickar på det som man har skrivit in, så kommer det hända något och då använder man sig av en funktion som talar om vad som ska hända, i detta fall när användaren har skrivit in text i inputfältet där man skrivit vilken film man vill ha mer information om och klickar på en knapp så ska man se Orginal titel, fakta om filmen, rankningen på respektive film samt vilken rankning mellan 1-10 den filmen har, finns i min displayMovies funktion*/
 
 
-
-
-
     fetchMovies(); /* försökte här hämta alla filmerna som finns i databasen */
 
 
-
-
 }
-
-
-
-
-
-/*  använda sedan kanske men göra om dom en del
- - ${movie.rating} - <span id='genColor' style='background-color:red;'>${movie.genres} </span> - ${likeMovie}</p> */
