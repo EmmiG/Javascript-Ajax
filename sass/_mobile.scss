@@ -1,60 +1,36 @@
-#movieBox{
-    text-align: center;
-   
-}
-
-#movieList{
-    //display: block;
-    //text-align: center;
-}
-
-#movieList, p{
-    
-    font-size: 16px;
-    //height: 70px;
-    max-width: 300px;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-family: cursive;
-    width: 100%;
-}
-
-
 .logo{
     height: 65px;
     max-width: 375px;
     width: 100%;
     background-color: #b1e9ff;
     margin-bottom: 50px;
-   
 }
 
 .logo, h1{
     text-align: center; 
     font-size: 24px;
-     margin-top: 0px;
+    margin-top: 0px;
     vertical-align: middle;
     line-height: 65px; 
     font-family: cursive;
-    
+}
+
+#movieBox{
+    text-align: center;
    
-    
 }
 
 #inputWrapper{
     text-align: center;
     margin-bottom: 40px;
     max-width: 375px;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 #movieInput{
     width: 45%;
     border: 1px solid black;
-    
-    
+       
 }
 
 #searchMovie{
@@ -63,6 +39,18 @@
     font-family: cursive;
 
 }
+
+#movieList, p{
+    
+    font-size: 16px;
+    max-width: 300px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: cursive;
+    width: 100%;
+}
+
 
 footer{
     
