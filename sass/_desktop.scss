@@ -9,10 +9,17 @@
     line-height: 120px; 
 }
 
+#movieBox{
+    //padding-bottom: 200px;
+}
+
 #inputWrapper{
     max-width: 1280px;
     vertical-align: middle;
     line-height: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 #movieInput{
@@ -35,10 +42,13 @@
     column-count: 3;
     column-width: 100px;
     padding-right: 50px;
+    padding-bottom: 100px;
+    max-width: 720px;
+    
 }
 
 #movieList, p{
-    font-size: 22px;
+    font-size: 23.5px;
     max-width: 1280px;
 }
 
