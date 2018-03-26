@@ -1,10 +1,13 @@
 o	Emmi Gillgren
 
-o	länk till projektet live på GitHub Pages samt länk till själva GitHub-repositoriet.  KVAR
+o	länk till projektet live på GitHub Pages samt länk till själva GitHub-repositoriet. 
+
+git remote add origin https://github.com/EmmiG/Javascript-Ajax.git
+git push -u origin master      KVAR
 
 o   Syftet med applikationen är att man ska kunna söka upp en film av 20 filmer , man kan se bild på respektive film, fakta om filmen, vilken total rankning filmen har fått av       alla filmer på APIet samt att man här ser rankningen mellan 1-10. Funktionalitet: Börja med storbokstav för att söka efter filmen ni söker.
 
-o	punktlista med vilka teknologier du använt.
+o	punktlista med vilka teknologier du använt. KVAR
 
 o	Jag har använt mig av APIet The Movie DB , här kan man söka efter: Filmer, Tv program samt personer. Länk: https://www.themoviedb.org/ 
 
