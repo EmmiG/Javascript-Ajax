@@ -13,7 +13,6 @@ function fetchMovies() {
             displayMovies(movies); /* är kopplad till funktionen displayMovies och skickar med att den ska visa alla filmerna på sidan */
         })
         .catch(function (error) { /* Man ska alltid ha en catch som tar emot alla error som eventuellt kan dyka upp */
-            console.log(error); /* skriver ut alla error meddelanden på sidan i console */
         });
 }
 
