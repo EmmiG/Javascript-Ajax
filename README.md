@@ -1,6 +1,6 @@
 o	Inlämningsuppgiften skapad av: Emmi Gillgren
 
-o	länk till projektet live på GitHub Pages: 
+o	länk till projektet live på GitHub Pages: https://emmig.github.io/Javascript-Ajax/ 
 
 o   GitHub-repositoriet: https://github.com/EmmiG/Javascript-Ajax.git 
 
