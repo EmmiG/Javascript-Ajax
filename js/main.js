@@ -1,4 +1,4 @@
-fetchMovies(); /* hämta alla filmerna som finns i databasen */
+fetchMovies(); /* hämta alla 20 filmerna som finns i databasen tog ej alla*/
     
 
 let globalMovieList = []; /* Denna är en tom array ifall att vi vill söka direkt efter en film när vi kommer till sidan men den har laddat klart helt då den har hämtat(fetch) datan från databasen */
@@ -95,8 +95,6 @@ var showMovie = document.getElementById('searchMovie'); /* variabeln *showMovie*
 showMovie.onclick = function () { /* använder mig av variabeln *showMovie*, onclick betyder att när man klickar på det som man har skrivit in, så kommer det hända något och då använder man sig av en funktion som talar om vad som ska hända, i detta fall när användaren har skrivit in text i inputfältet där man skrivit vilken film man vill ha mer information om och klickar på en knapp så ska man se Orginal titel, fakta om filmen, rankningen på respektive film samt vilken rankning mellan 1-10 den filmen har, finns i min displayMovies funktion*/
 
    
-    fetchMovies(); /* hämta alla filmerna som finns i databasen efter funktionen att man ha tryckt på knappen, den console.log(fetchMovies) att det är en knap. När man har börjat skriva dom första bokstäverna(börja med stor bokstav) på filmen som man söker kommer det upp automatiskt och då behöver man enbart trycka på enter knappen på tagentbordet */
-    
-    
+    fetchMovies(); /* hämta alla 20 filmerna som finns i databasen tog ej alla med funktionen att man ha tryckt på knappen, den console.log(fetchMovies) att det är en knapp. När man har börjat skriva dom första bokstäverna(börja med stor bokstav) på filmen som man söker kommer då filmen upp automatiskt och då behöver man enbart trycka på enter knappen på tagentbordet */
 
 }

@@ -17,7 +17,7 @@ o	Jag har använt mig av APIet The Movie DB , här kan man söka efter: Filmer, 
 o   Arbetsprocessen: Jag börjar alltid med javascripten och vilka funktioner jag vill få ut av det innan jag gör något annat, skriver kommentarer på både index.html samt             main.js, när det väl är gjort så går jag över till mobilläget och bygger upp min styling enligt mobile first metoden och jobbar uppåt till desktopläget, efter det rensar 
     jag all min kod och gör det fint med tabbning och tar bort mellanrum som tillkommit.
 
-o   Kodmässigt förbättras: Jag vill snabbare kunna skriva koden, och att jag lättare ska se vad som är en dubblet i min kod eller se vad som egentligen inte används i                 den med andra ord lära mig mera hur man använder sig av debugger.    
+o   Kodmässigt förbättras: Jag vill snabbare kunna skriva koden, och att jag lättare ska se vad som är en dubblett i min kod eller se vad som egentligen inte används i                 den med andra ord lära mig mera hur man använder sig av debugger.    
 
 
 
